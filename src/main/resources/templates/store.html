@@ -1,0 +1,531 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Store</title>
+    <link rel="shortcut icon" th:href="@{/img/icon.png}" type="image/x-icon">
+    <link rel="stylesheet" th:href="@{/css/index.css}">
+    <link rel="stylesheet" th:href="@{/css/store.css}">
+    <link rel="stylesheet" th:href="@{/css/cart.css}">
+</head>
+<body>
+<div class="header-info">
+    <p>Working Hours: 8 AM - 8 PM</p>
+    <div class="header-info-left-corner">
+        <p>Email: happypaw@gmail.com</p>
+        <p>Phone: <a href="tel:+123456789">+123 456 789</a></p>
+    </div>
+</div>
+<header class="main-header">
+    <div class="container header-container">
+        <nav>
+            <div class="burger">
+                <a href="/happypaw" class="logo"><img th:src="@{/img/logo.png}" alt="SOFA"></a>
+                <div class="burger-button" tabindex="0"><span></span></div>
+            </div>
+            <div class="menu">
+                <a href="/happypaw" class="menu-link">About us</a>
+                <a href="/happypaw" class="menu-link">Categories</a>
+                <a href="/happypaw" class="menu-link">Best Sellers</a>
+                <a href="/happypaw" class="menu-link">Testimonials</a>
+                <a href="/happypaw" class="menu-link">Our Shop</a>
+                <a href="/happypaw" class="menu-link">Contact us</a>
+                <a href="/store" class="button outline-button">Shop now</a>
+            </div>
+        </nav>
+    </div>
+</header>
+<main>
+    <section class="gallery">
+        <div class="store-container">
+            <div class="gallery-items">
+                <div class="item show">
+                    <span class="shop-item-title">AGA Mice Set</span>
+                    <a th:href="@{/pages/aga-mice-set.html}"><img class="shop-item-image" th:src="@{/img/shop-items/for-cats/for-cats-1.png}"></a>
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$3,00</span>
+                        <button class="btn-cart shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="item show">
+                    <span class="shop-item-title">Chicken Slice</span>
+                    <a th:href="@{/pages/chicken-slice.html}"><img class="shop-item-image" th:src="@{/img/shop-items/dry-food/cat1.png}"></a>
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$1,00</span>
+                        <button class="btn-cart shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="item show">
+                    <span class="shop-item-title">DOGGY Fun Set</span>
+                    <a th:href="@{/pages/doggy-fun-set.html}"><img class="shop-item-image" th:src="@{/img/shop-items/for-dogs/for-dogs-1.png}"></a>
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$6,00</span>
+                        <button class="btn-cart shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="item show">
+                    <span class="shop-item-title">AGA Rope Toy</span>
+                    <a th:href="@{/pages/aga-rope-toy.html}"><img class="shop-item-image" th:src="@{/img/shop-items/ball-toy.png}"></a>
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$5,00</span>
+                        <button class="btn-cart shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="item show">
+                    <span class="shop-item-title">SERA Purple Collar</span>
+                    <a th:href="@{/pages/sera-purple-collar.html}"><img class="shop-item-image" th:src="@{/img/shop-items/for-rabbits/for-rabbits-1.png}"></a>
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$2,00</span>
+                        <button class="btn-cart shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="item show">
+                    <span class="shop-item-title">DORA Hanging Mirror</span>
+                    <a th:href="@{/pages/dora-hanging-mirror.html}"><img class="shop-item-image" th:src="@{/img/shop-items/for-parrots/for-parrots-1.png}"></a>
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$14,00</span>
+                        <button class="btn-cart shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="item show">
+                    <span class="shop-item-title">EGO Butterfly Toy</span>
+                    <a th:href="@{/pages/ego-butterfly-toy.html}"><img class="shop-item-image" th:src="@{/img/shop-items/butterfly-toy.png}"></a>
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$8,00</span>
+                        <button class="btn-cart shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="item show">
+                    <span class="shop-item-title">DUNA Pillow Bed</span>
+                    <a th:href="@{/pages/duna-pillow-bed.html}"><img class="shop-item-image" th:src="@{/img/shop-items/for-dogs/for-dogs-2.png}"></a>
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$10,00</span>
+                        <button class="btn-cart shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="item hide">
+                    <span class="shop-item-title">VERTA Hanging Nest</span>
+                    <a th:href="@{/pages/vetra-hanging-nest.html}"><img class="shop-item-image" th:src="@{/img/shop-items/for-parrots/for-parrots-2.png}"></a>
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$8,00</span>
+                        <button class=" btn-cart shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="item hide">
+                    <span class="shop-item-title">SERA Woven Leash</span>
+                    <a th:href="@{/pages/sera-woven-leash.html}"><img class="shop-item-image" th:src="@{/img/shop-items/lace.png}"></a>
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$2,00</span>
+                        <button class="btn-cart shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="item hide">
+                    <span class="shop-item-title">Natural Beef</span>
+                    <a th:href="@{/pages/natural-beef.html}"><img class="shop-item-image" th:src="@{/img/shop-items/dry-food/dog1.png}"></a>
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$2,00</span>
+                        <button class="btn-cart shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="item hide">
+                    <span class="shop-item-title">Grain & Nuts</span>
+                    <a th:href="@{/pages/grain-and-nuts.html}"><img class="shop-item-image" th:src="@{/img/shop-items/dry-food/rabbit.png}"></a>
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$3,00</span>
+                        <button class="btn-cart shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="item hide">
+                    <span class="shop-item-title">DUNA Woven Toy</span>
+                    <a th:href="@{/pages/duna-woven-toy.html}"><img class="shop-item-image" th:src="@{/img/shop-items/toy-owl.png}"></a>
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$2,00</span>
+                        <button class="btn-cart shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="item hide">
+                    <span class="shop-item-title">DORA Metal Pet Brush</span>
+                    <a th:href="@{/pages/dora-metal-pet-brush.html}"><img class="shop-item-image" th:src="@{/img/shop-items/pet-brush.png}"></a>
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$15,00</span>
+                        <button class="btn-cart shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="item hide">
+                    <span class="shop-item-title">STERCO Rainbow Balls</span>
+                    <a th:href="@{/pages/sterco-rainbow-balls.html}"><img class="shop-item-image" th:src="@{/img/shop-items/for-hamsters/for-hamsters-3.png}"></a>
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$4,00</span>
+                        <button class="btn-cart shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="item hide">
+                    <span class="shop-item-title">Parrot's food</span>
+                    <a th:href="@{/pages/parrots-food.html}"><img class="shop-item-image" th:src="@{/img/shop-items/dry-food/parrot.png}"></a>
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$7,00</span>
+                        <button class="btn-cart shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="item hide">
+                    <span class="shop-item-title">AGA Retractable Leash</span>
+                    <a th:href="@{/pages/aga-retractable-leash.html}"><img class="shop-item-image" th:src="@{/img/shop-items/for-dogs/for-dogs-3.png}"></a>
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$33,00</span>
+                        <button class="btn-cart shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="item hide">
+                    <span class="shop-item-title">VITALIFE Crunch Sticks Treat</span>
+                    <a th:href="@{/pages/vitalife-crunch-sticks-treat.html}"><img class="shop-item-image" th:src="@{/img/shop-items/sticks.png}"></a>
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$5,00</span>
+                        <button class="btn-cart shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="item hide">
+                    <span class="shop-item-title">Tuna & Salmon</span>
+                    <a th:href="@{/pages/tuna-and-salmon.html}"><img class="shop-item-image" th:src="@{/img/shop-items/dry-food/cat2.png}"></a>
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$2,00</span>
+                        <button class="btn-cart shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="item hide">
+                    <span class="shop-item-title">DORA Wood Swing</span>
+                    <a th:href="@{/pages/dora-wood-swing.html}"><img class="shop-item-image" th:src="@{/img/shop-items/for-parrots/for-parrots-3.png}"></a>
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$7,00</span>
+                        <button class="btn-cart shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="item hide">
+                    <span class="shop-item-title">DOGGY 2-Bunch Toy</span>
+                    <a th:href="@{/pages/doggy-2-bunch-toy.html}"><img class="shop-item-image" th:src="@{/img/shop-items/for-dogs/for-dogs-4.png}"></a>
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$5,00</span>
+                        <button class="btn-cart shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="item hide">
+                    <span class="shop-item-title">AGA Bowl for Hamsters</span>
+                    <a th:href="@{/pages/aga-bowl-for-hamsters.html}"><img class="shop-item-image" th:src="@{/img/shop-items/for-hamsters/for-hamsters-1.png}"></a>
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$2,00</span>
+                        <button class="btn-cart shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="item hide">
+                    <span class="shop-item-title">OPTY Pet Carrier</span>
+                    <a th:href="@{/pages/opty-pet-carrier.html}"><img class="shop-item-image" th:src="@{/img/shop-items/cat-box.png}"></a>
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$8,00</span>
+                        <button class="btn-cart shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="item hide">
+                    <span class="shop-item-title">TISCO Toy Wheel</span>
+                    <a th:href="@{/pages/tisco-toy-wheel.html}"><img class="shop-item-image" th:src="@{/img/shop-items/for-hamsters/for-hamsters-2.png}"></a>
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$9,00</span>
+                        <button class="btn-cart shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="item hide">
+                    <span class="shop-item-title">VITALIFE 2-Bowls Set</span>
+                    <a th:href="@{/pages/vitalife-2-bowls-set.html}"><img class="shop-item-image" th:src="@{/img/shop-items/for-cats/for-cats-2.png}"></a>
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$9,00</span>
+                        <button class="btn-cart shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="item hide">
+                    <span class="shop-item-title">EGO Kitten's Heaven Set</span>
+                    <a th:href="@{/pages/ego-kittens-heaven-set.html}"><img class="shop-item-image" th:src="@{/img/shop-items/balls.png}"></a>
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$12,00</span>
+                        <button class="btn-cart shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="item hide">
+                    <span class="shop-item-title">AGA Leash & Collar</span>
+                    <a th:href="@{/pages/aga-leash-and-collar.html}"><img class="shop-item-image" th:src="@{/img/shop-items/for-cats/for-cats-3.png}"></a>
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$13,00</span>
+                        <button class="btn-cart shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="item hide">
+                    <span class="shop-item-title">AGA CLinking Toy</span>
+                    <a th:href="@{/pages/aga-clinking-toy.html}"><img class="shop-item-image" th:src="@{/img/shop-items/for-rabbits/for-rabbits-2.png}"></a>
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$2,00</span>
+                        <button class="btn-cart shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="item hide">
+                    <span class="shop-item-title">HARNO Rabbit Cage</span>
+                    <a th:href="@{/pages/harno-rabbit-cage.html}"><img class="shop-item-image" th:src="@{/img/shop-items/for-rabbits/for-rabbits-3.png}"></a>
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$60,00</span>
+                        <button class="btn-cart shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="item hide">
+                    <span class="shop-item-title">OPTY Plastic Bowl</span>
+                    <a th:href="@{/pages/opty-plastic-bowl.html}"><img class="shop-item-image" th:src="@{/img/shop-items/bowl.png}"></a>
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$3,00</span>
+                        <button class="btn-cart shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="item hide">
+                    <span class="shop-item-title">DUNA Gray Bed</span>
+                    <a th:href="@{/pages/duna-gray-bed.html}"><img class="shop-item-image" th:src="@{/img/shop-items/for-cats/for-cats-4.png}"></a>
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$25,00</span>
+                        <button class="btn-cart shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="item hide">
+                    <span class="shop-item-title">DORA Pet Carrier</span>
+                    <a th:href="@{/pages/dora-pet-carrier.html}"><img class="shop-item-image" th:src="@{/img/shop-items/box.png}"></a>
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$23,00</span>
+                        <button class="btn-cart shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="item hide">
+                    <span class="shop-item-title">OPTY Wooden Stand</span>
+                    <a th:href="@{/pages/opty-wooden-stand.html}"><img class="shop-item-image" th:src="@{/img/shop-items/for-parrots/for-parrots-4.png}"></a>
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$13,00</span>
+                        <button class="btn-cart shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="item hide">
+                    <span class="shop-item-title">Turkey Pate</span>
+                    <a th:href="@{/pages/turkey-pate.html}"><img class="shop-item-image" th:src="@{/img/shop-items/dry-food/cat3.png}"></a>
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$1,00</span>
+                        <button class="btn-cart shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="item hide">
+                    <span class="shop-item-title">Natural Chicken</span>
+                    <a th:href="@{/pages/natural-chicken.html}"><img class="shop-item-image" th:src="@{/img/shop-items/dry-food/dog2.png}"></a>
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$3,00</span>
+                        <button class="btn-cart shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="item hide">
+                    <span class="shop-item-title">DUCCA Air Pump</span>
+                    <a th:href="@{/pages/ducca-air-pump.html}"><img class="shop-item-image" th:src="@{/img/shop-items/for-fish/for-fish-1.png}"></a>
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$42,00</span>
+                        <button class="btn-cart shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="item hide">
+                    <span class="shop-item-title">TISCO 50 Liter Aquarium</span>
+                    <a th:href="@{/pages/tisco-50-liter-aquarium.html}"><img class="shop-item-image" th:src="@{/img/shop-items/for-fish/for-fish-2.png}"></a>
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$70,00</span>
+                        <button class="btn-cart shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="item hide">
+                    <span class="shop-item-title">Fish Food</span>
+                    <a th:href="@{/pages/fish-food.html}"><img class="shop-item-image" th:src="@{/img/shop-items/dry-food/fish.png}"></a>
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$5,00</span>
+                        <button class="btn-cart shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="item hide">
+                    <span class="shop-item-title">Natural Pork</span>
+                    <a th:href="@{/pages/natural-pork.html}"><img class="shop-item-image" th:src="@{/img/shop-items/dry-food/dog3.png}"></a>
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$2,00</span>
+                        <button class="btn-cart shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="item hide">
+                    <span class="shop-item-title">VETRA Fish Castle</span>
+                    <a th:href="@{/pages/vetra-fish-castle.html}"><img class="shop-item-image" th:src="@{/img/shop-items/for-fish/for-fish-3.png}"></a>
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$6,00</span>
+                        <button class="btn-cart shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="item hide">
+                    <span class="shop-item-title">TISCO Landing Net</span>
+                    <a th:href="@{/pages/tisco-landing-net.html}"><img class="shop-item-image" th:src="@{/img/shop-items/for-fish/for-fish-4.png}"></a>
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$4,00</span>
+                        <button class="btn-cart shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="item hide">
+                    <span class="shop-item-title">AGA Green Cage</span>
+                    <a th:href="@{/pages/aga-green-cage.html}"><img class="shop-item-image" th:src="@{/img/shop-items/for-hamsters/for-hamsters-4.png}"></a>
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$25,00</span>
+                        <button class="btn-cart shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="item hide">
+                    <span class="shop-item-title">DORA Rabbit Brush</span>
+                    <a th:href="@{/pages/dora-rabbit-brush.html}"><img class="shop-item-image" th:src="@{/img/shop-items/for-rabbits/for-rabbits-4.png}"></a>
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$10,00</span>
+                        <button class="btn-cart shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+            </div>
+            <div class="pagination">
+                <div class="prev disabled">Prev</div>
+                <div class="page">Page <span class="page-num">1</span></div>
+                <div class="next">Next</div>
+            </div>
+        </div>
+    </section>
+    <section class="container content-section">
+        <h2 class="section-header">CART</h2>
+        <div class="cart-row">
+            <span class="cart-item cart-header cart-column">ITEM</span>
+            <span class="cart-price cart-header cart-column">PRICE</span>
+            <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+        </div>
+        <div class="cart-items">
+        </div>
+        <div class="cart-total">
+            <strong class="cart-total-title">Total</strong>
+            <span class="cart-total-price">$0</span>
+        </div>
+        <button class="btn btn-primary btn-purchase" type="button">
+            <a href="#" class="js-open-modal" data-modal="1">PURCHASE</a>
+        </button>
+    </section>
+
+    <div class="modal" data-modal="1">
+        <svg class="modal__cross js-modal-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"/></svg>
+        <form action="/store" method="POST">
+            <h1 class="ordering">Ordering</h1>
+            <div class="modal-item">
+                <p>Customer's phone number:</p>
+                <input type="tel" name="phoneNumber" placeholder="Enter your phone number*" required="">
+            </div>
+            <div class="modal-item">
+                <p>Last name of the customer:</p>
+                <input type="text" name="surname" placeholder="Enter your surname*" required="">
+            </div>
+            <div class="modal-item">
+                <p>Customer name:</p>
+                <input type="text" name="name" placeholder="Enter your name*" required="">
+            </div>
+            <div class="modal-item">
+                <p>Middle name of customer:</p>
+                <input type="text" name="middleName" placeholder="Enter your middle name*">
+            </div>
+            <div class="modal-item">
+                <p>City:</p>
+                <input type="text" name="city" placeholder="Enter your city*" required="">
+            </div>
+            <div class="modal-item">
+                <p>Street:</p>
+                <input type="text" name="street" placeholder="Enter your address*" required="">
+            </div>
+            <div class="modal-item">
+                <p>House number:</p>
+                <input type="text" name="houseNumber" placeholder="Enter your address number*" required="">
+            </div>
+            <div class="modal-item">
+                <p>Apartment number:</p>
+                <input type="text" name="flatNumber" placeholder="Enter your address flat">
+            </div>
+            <input type="hidden" name="goods" class="goods" value = "">
+            <div class="total-price" style="text-align:right"></div>
+            <a href="/confirmation"><input type="submit" value="confirm the order" class="button green-button button-shadow"></a>
+        </form>
+    </div>
+    <div class="overlay js-overlay-modal"></div>
+</main>
+<footer>
+    <div class="container">
+        <div class="footer-main">
+            <div class="footer-info">
+                <a href="#" class="logo"><img th:src="@{/img/logo.png}" alt="SOFA"></a>
+                <p class="text">
+                    If you have any questions, please contact us at happypaw@gmail.com or get in touch via social media.</p>
+                <ul class="wrapper">
+                    <li class="icon facebook">
+                        <span class="tooltip">Facebook</span>
+                        <span><i class="fab fa-facebook-f"><a href="https://www.facebook.com/Happypawlb"><img th:src="@{/img/social-icons/facebook-svgrepo-com.svg}" alt=""></a></i></span>
+                    </li>
+                    <li class="icon twitter">
+                        <span class="tooltip">Twitter</span>
+                        <span><i class="fab fa-twitter"><a href="https://twitter.com/happypaw_us"><img th:src="@{/img/social-icons/twitter-svgrepo-com.svg}" alt=""></a></i></span>
+                    </li>
+                    <li class="icon instagram">
+                        <span class="tooltip">Instagram</span>
+                        <span><i class="fab fa-instagram"><a href="https://www.instagram.com/happy_paw/"><img th:src="@{/img/social-icons/instagram-social-svgrepo-com.svg}" alt=""></a></i></span>
+                    </li>
+                    <li class="icon youtube">
+                        <span class="tooltip">Youtube</span>
+                        <span><i class="fab fa-youtube"><a href="https://www.youtube.com/channel/UCV8N7NiJqZJsssMT3wAjjzQ"><img th:src="@{/img/social-icons/youtube-svgrepo-com.svg}" alt=""></a></i></span>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-nav">
+                <div class="navigation">
+                    <h3>Navigation</h3>
+                    <div class="orange-separator"></div>
+                    <ul>
+                        <li><a href="/happypaw">About Us</a></li>
+                        <li><a href="/happypaw">Categories</a></li>
+                        <li><a href="/happypaw">Best Sellers</a></li>
+                        <li><a href="/happypaw">Testimonials</a></li>
+                        <li><a href="/happypaw">Our Shop</a></li>
+                    </ul>
+                </div>
+                <div class="customer-service">
+                    <h3>Customer Service</h3>
+                    <div class="orange-separator"></div>
+                    <ul>
+                        <li>Track Order</li>
+                        <li>Returns</li>
+                        <li>Shipping Info</li>
+                        <li>Recalls & Advisories</li>
+                        <li>Pet Store Locator</li>
+                    </ul>
+                </div>
+                <div class="help-and-info">
+                    <h3>Help & Information</h3>
+                    <div class="orange-separator"></div>
+                    <ul>
+                        <li>Privacy Policy</li>
+                        <li>Terms & Conditions</li>
+                        <li>FAQ</li>
+                        <li>Product Support</li>
+                        <li>Contact Us</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>© Created by</p>
+        <p>All rights Reserved</p>
+    </div>
+</footer>
+<script th:src="@{/js/index.js}"></script>
+<script th:src="@{/js/pagination.js}"></script>
+<script th:src="@{/js/cart.js}"></script>
+<script th:src="@{/js/modal-window.js}"></script>
+</body>
+</html>

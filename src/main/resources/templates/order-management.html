@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Order management</title>
+    <link rel="shortcut icon" th:href="@{/img/icon.png}" type="image/x-icon">
+    <link rel = "stylesheet" th:href = "@{/css/order-management.css}">
+    <link rel = "stylesheet" th:href = "@{/css/cart.css}">
+</head>
+<body>
+
+<table>
+    <tbody>
+    <form th:action="@{/logout}" method="post">
+        <input type="submit" value="Sign Out"/>
+    </form>
+    <tr>
+        <th>Номер замовлення</th>
+        <th>П.І.Б замовника</th>
+        <th>Номер телефону</th>
+        <th>Адреса</th>
+        <th>Назва товару</th>
+        <th>Кількість</th>
+        <th>Ціна за одиницю товару</th>
+        <th>Сума</th>
+        <th></th>
+    </tr>
+    <tr th:each="order : ${orders}">
+        <td th:text="${order.id}"></td>
+        <td th:text="${order.surname} + ' ' +  ${order.name} + ' ' + ${order.middleName}"></td>
+        <td th:text="${order.phoneNumber}"></td>
+        <td th:text="'м. ' + ${order.city} + ', вул. ' + ${order.street} + ', буд. ' + ${order.houseNumber} + ', кв. ' + ${order.flatNumber}"></td>
+        <td>
+            <table>
+                <tr th:each="item : ${order.items}"><td th:text="${item.productName}"></td></tr>
+            </table>
+        </td>
+        <td>
+            <table>
+                <tr th:each="item : ${order.items}"><td th:text="${item.amount}"></td></tr>
+            </table>
+        </td>
+        <td>
+            <table>
+                <tr th:each="item : ${order.items}"><td th:text="'$ ' + ${item.unitPrice}"></td></tr>
+            </table>
+        </td>
+        <td th:text="'$ ' + ${order.sum}"></td>
+        <td>
+            <form action="/order-management" method="POST">
+            <input type="hidden" name="id" th:value="${order.id}">
+            <button class="btn btn-danger" type="submit">REMOVE</button>
+            </form>
+        </td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Confirmation</title>
+    <link rel="shortcut icon" th:href="@{/img/icon.png}" type="image/x-icon">
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,400|Montserrat:700' rel='stylesheet' type='text/css'>
+    <style>
+        @import url(//cdnjs.cloudflare.com/ajax/libs/normalize/3.0.1/normalize.min.css);
+        @import url(//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css);
+    </style>
+    <link rel="stylesheet" href="https://2-22-4-dot-lead-pages.appspot.com/static/lp918/min/default_thank_you.css">
+    <link rel="stylesheet" th:href="@{/css/confirmation.css}">
+</head>
+<body>
+<div>
+    <a href="/happypaw"><img class="logo-conf" th:src="@{/img/logo.png}" alt="Happy Paw"></a>
+</div>
+<header class="site-header" id="header">
+    <h1 class="site-header__title" data-lead-id="site-header-title">THANK YOU FOR YOUR ORDER!</h1>
+</header>
+
+<div class="main-content">
+    <i class="fa fa-check main-content__checkmark" id="checkmark"></i>
+    <p class="main-content__body" data-lead-id="main-content-body">we will contact you within 30 minutes</p>
+</div>
+
+<footer class="site-footer" id="footer">
+    <p class="site-footer__fineprint" id="fineprint">Copyright ©2022 | All Rights Reserved</p>
+</footer>
+</body>
+</html>

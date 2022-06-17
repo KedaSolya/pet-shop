@@ -1,0 +1,771 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Happy Paw</title>
+    <link rel="shortcut icon" th:href="@{/img/icon.png}" type="image/x-icon">
+    <link rel="stylesheet" th:href="@{/css/index.css}">
+</head>
+<body>
+<div class="header-info">
+    <p>Working Hours: 8 AM - 8 PM</p>
+    <div class="header-info-left-corner">
+        <p>Email: happypaw@gmail.com</p>
+        <p>Phone: <a href="tel:+123456789">+123 456 789</a></p>
+    </div>
+</div>
+<header class="main-header" style="background-image: url(/img/cover.png);">
+    <div class="container header-container">
+        <nav>
+            <div class="burger">
+                <a href="/happypaw" class="logo"><img th:src="@{/img/logo.png}" alt="Happy Paw"></a>
+                <div class="burger-button" tabindex="0"><span></span></div>
+            </div>
+            <div class="menu">
+                <a href="#about" class="menu-link">About us</a>
+                <a href="#categories" class="menu-link">Categories</a>
+                <a href="#best-sellers" class="menu-link">Best Sellers</a>
+                <a href="#testimonials" class="menu-link">Testimonials</a>
+                <a href="#products" class="menu-link">Our Shop</a>
+                <a href="#contacts" class="menu-link">Contact us</a>
+                <a href="/store" class="button outline-button">Shop now</a>
+            </div>
+        </nav>
+        <div class="header-text-wrapper">
+            <div class="header-text">
+                <h1 class="heading">Everything Your Pet Needs</h1>
+                <p class="subtitle">Pet supplies, food, and products from the best manufacturers.</p>
+                <a href="#best-selling" class="button orange-button button-shadow">
+                    Learn more
+                    <svg class="button-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36" x="0px" y="0px" style="max-width:100%" height="100%"><defs fill="currentColor"><style fill="currentColor">
+                        .cls-1 {
+                            fill-rule: evenodd;
+                        }
+                    </style></defs><path data-name="28" class="cls-1" d="M34,18l-5-4v3H26v2h3v3ZM24,19H20V17h4v2Zm-6,0H14V17h4v2Zm-6,0H8V17h4v2ZM4,16a2,2,0,1,1-2,2A2,2,0,0,1,4,16Z" fill="currentColor"></path></svg>
+                </a>
+            </div>
+        </div>
+    </div>
+</header>
+<main>
+    <section id="promotions" class="container promo-wrapper">
+        <div class="promo">
+            <div class="promo-img1"></div>
+            <div class="promo-title1">
+                <h3>Get <span class="highlight">10% Off</span> for Cats & Dogs Stuff</h3>
+                <a href="#collections" class="button transparent-button button1">See Products</a>
+            </div>
+        </div>
+        <div class="promo">
+            <div class="promo-img2"></div>
+            <div class="promo-title2">
+                <p>BUTCHERS, ROYAL CANIN, PEDIGREE</p>
+                <h3>Best-Quality Food for Pets</h3>
+                <a href="#collections" class="button transparent-button button2">Buy Now</a>
+            </div>
+        </div>
+    </section>
+    <div class="banner">
+        <p class="heading container">
+            <span class="highlight">Top Collections</span> For Any Pets
+        </p>
+    </div>
+
+    <div class="animal-gallery" id="categories">
+        <h2 class="section-title">Any Products for Any Pets</h2>
+        <img class="separator" th:src="@{/img/res/separator.svg}" alt="">
+        <p class="subtitle">Best picks for your beloved companions only in Happy Paw.</p>
+        <section id="slider">
+            <input type="radio" name="slider" id="s1">
+            <input type="radio" name="slider" id="s2">
+            <input type="radio" name="slider" id="s3" checked>
+            <input type="radio" name="slider" id="s4">
+            <input type="radio" name="slider" id="s5">
+
+            <label for="s1" id="slide1">
+                <img th:src="@{/img/res/animals/dog.png}" alt="dog" height="100%" width="100%">
+            </label>
+            <label for="s2" id="slide2">
+                <img th:src="@{/img/res/animals/parrot.png}" alt="parrot" height="100%" width="100%">
+            </label>
+            <label for="s3" id="slide3">
+                <img th:src="@{/img/res/animals/rabbit.png}" alt="rabbit" height="100%" width="100%">
+            </label>
+            <label for="s4" id="slide4">
+                <img th:src="@{/img/res/animals/fish.png}" alt="fish" height="100%" width="100%">
+            </label>
+            <label for="s5" id="slide5">
+                <img th:src="@{/img/res/animals/hamster.png}" alt="hamster" height="100%" width="100%">
+            </label>
+        </section>
+    </div>
+
+    <div class="about" id="about">
+        <div class="about-photo"><img th:src="@{/img/background-about.png}" alt=""></div>
+        <div class="about-info">
+            <h3>We Care About Your Pets And Their Well-Being</h3>
+            <img th:src="@{/img/res/separator.svg}" alt="" class="separator">
+            <h4>Happy Paw is an online store that offers goods for your pets: cats and dogs, fish, rabbits, birds, and many other animals.</h4>
+            <p>We sell pet food, supplies, clothes, and different products by the best American and European manufacturers. We are pet lovers, just like you, and pick only the best and high-quality goods:</p>
+            <ul>
+                <li>hypoallergenic dry and wet food;</li>
+                <li>safe and long-lasting toys;</li>
+                <li>bedding, beds, and cages;</li>
+                <li>aquariums, tanks, and accessories;</li>
+                <li>clothes, collars, and harnesses.</li>
+            </ul>
+        </div>
+    </div>
+    <section class="advantages">
+        <ul class="container wrapper">
+            <li class="item a-deliv">
+                <div class="item-elem"><img th:src="@{/img/res/shipping.svg}" alt=""></div>
+                <h3 class="title">Free Shipping</h3>
+                <p class="text">Free shipping on all order.</p>
+            </li>
+            <li class="item a-money">
+                <div class="item-elem"><img th:src="@{/img/res/return.svg}" alt=""></div>
+                <h3 class="title">10-Day Returns</h3>
+                <p class="text">Contact us for a return.</p>
+            </li>
+            <li class="item a-warranty">
+                <div class="item-elem"><img th:src="@{/img/res/credit-card.svg}" alt=""></div>
+                <h3 class="title">Secure Payment</h3>
+                <p class="text">We accept Visa and MasterCard.</p>
+            </li>
+            <li class="item a-payment">
+                <div class="item-elem"><img th:src="@{/img/res/headphones.svg}" alt=""></div>
+                <h3 class="title">Online Support</h3>
+                <p class="text">We are always here to help.</p>
+            </li>
+        </ul>
+    </section>
+    <section class="trending-products" id="best-sellers">
+        <div class="trending-products-text">
+            <h3>Trending Products</h3>
+            <img th:src="@{/img/res/separator.svg}" alt="" class="separator">
+            <p>Top-selling items and popular picks by our customers. Check them now!</p>
+        </div>
+        <div class="container-slider">
+            <div class="slide">
+                <div class="product-box">
+                    <div class="img">
+                        <a th:href="@{/pages/aga-rope-toy.html}"><img th:src="@{/img/shop-items/ball-toy.png}" alt=""></a>
+                    </div>
+                    <div class="details">
+                        <a th:href="@{/pages/aga-rope-toy.html}"><p class="name">AGA Rope Toy</p></a>
+                        <p class="price">$5,00</p>
+                    </div>
+                    <div class="button">
+                        <a th:href="@{/pages/aga-rope-toy.html}" class="add-btn">Order Now</a>
+                    </div>
+                </div>
+                <div class="product-box">
+                    <div class="img">
+                        <a th:href="@{/pages/dora-pet-carrier.html}"><img th:src="@{/img/shop-items/box.png}" alt=""></a>
+                    </div>
+                    <div class="details">
+                        <a th:href="@{/pages/dora-pet-carrier.html}"><p class="name">DORA Pet Carrier</p></a>
+                        <p class="price">$23,00</p>
+                    </div>
+                    <div class="button">
+                        <a th:href="@{/pages/dora-pet-carrier.html}" class="add-btn">Order Now</a>
+                    </div>
+                </div>
+                <div class="product-box">
+                    <div class="img">
+                        <a th:href="@{/pages/dora-metal-pet-brush.html}"><img th:src="@{/img/shop-items/pet-brush.png}" alt=""></a>
+                    </div>
+                    <div class="details">
+                        <a th:href="@{/pages/dora-metal-pet-brush.html}"><p class="name">DORA Metal Pet Brush</p></a>
+                        <p class="price">$15,00</p>
+                    </div>
+                    <div class="button">
+                        <a th:href="@{/pages/dora-metal-pet-brush.html}" class="add-btn">Order Now</a>
+                    </div>
+                </div>
+                <div class="product-box">
+                    <div class="img">
+                        <a th:href="@{/pages/ego-kittens-heaven-set.html}"><img th:src="@{/img/shop-items/balls.png}" alt=""></a>
+                    </div>
+                    <div class="details">
+                        <a th:href="@{/pages/ego-kittens-heaven-set.html}"><p class="name">EGO Kitten's Heaven Set</p></a>
+                        <p class="price">$12,00</p>
+                    </div>
+                    <div class="button">
+                        <a th:href="@{/pages/ego-kittens-heaven-set.html}" class="add-btn">Order Now</a>
+                    </div>
+                </div>
+                <div class="product-box">
+                    <div class="img">
+                        <a th:href="@{/pages/opty-pet-carrier.html}"><img th:src="@{/img/shop-items/cat-box.png}" alt=""></a>
+                    </div>
+                    <div class="details">
+                        <a th:href="@{/pages/opty-pet-carrier.html}"><p class="name">OPTY Pet Carrier</p></a>
+                        <p class="price">$8,00</p>
+                    </div>
+                    <div class="button">
+                        <a th:href="@{/pages/opty-pet-carrier.html}" class="add-btn">Order Now</a>
+                    </div>
+                </div>
+                <div class="product-box">
+                    <div class="img">
+                        <a th:href="@{/pages/sera-woven-leash.html}"><img th:src="@{/img/shop-items/lace.png}" alt=""></a>
+                    </div>
+                    <div class="details">
+                        <a th:href="@{/pages/sera-woven-leash.html}"><p class="name">SERA Woven Leash</p></a>
+                        <p class="price">$2,00</p>
+                    </div>
+                    <div class="button">
+                        <a th:href="@{/pages/sera-woven-leash.html}" class="add-btn">Order Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="spring-collection"  th:style="'background-image: url(/img/background-timer.png);'">
+        <div class="container">
+            <div class="wrapper">
+                <p class="wrapper-promo">PROMOTIONS</p>
+                <h2 class="heading">Cat Week Is Finally Here!</h2>
+                <p class="subtitle">Don't miss special prices on products for cats: beds, litter boxes, feeders, and much more. After this trial the prices will go up.</p>
+                <div class="timer">
+                    <div class="timer__items">
+                        <div class="timer__item timer__days">00</div>
+                        <div class="timer__item timer__hours">00</div>
+                        <div class="timer__item timer__minutes">00</div>
+                        <div class="timer__item timer__seconds">00</div>
+                    </div>
+                </div>
+                <a href="#products" class="button transparent-button button-shadow">
+                    Our faves
+                    <svg class="button-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36" x="0px" y="0px" style="max-width:100%" height="100%"><defs fill="currentColor"><style fill="currentColor">
+                        .cls-1 {
+                            fill-rule: evenodd;
+                        }
+                    </style></defs><path data-name="28" class="cls-1" d="M34,18l-5-4v3H26v2h3v3ZM24,19H20V17h4v2Zm-6,0H14V17h4v2Zm-6,0H8V17h4v2ZM4,16a2,2,0,1,1-2,2A2,2,0,0,1,4,16Z" fill="currentColor"></path></svg>
+                </a>
+            </div>
+        </div>
+    </section>
+    <ul class="collections container" id="collections">
+        <li class="collections-article collections-article-light">
+            <p class="title">Save <span class="highlight">10%</span> on Aquariums</p>
+            <a href="/store" class="button green-button button-shadow">
+                Learn more
+                <svg class="button-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36" x="0px" y="0px" style="max-width:100%" height="100%"><defs fill="currentColor"><style fill="currentColor">
+                    .cls-1 {
+                        fill-rule: evenodd;
+                    }
+                </style></defs><path data-name="28" class="cls-1" d="M34,18l-5-4v3H26v2h3v3ZM24,19H20V17h4v2Zm-6,0H14V17h4v2Zm-6,0H8V17h4v2ZM4,16a2,2,0,1,1-2,2A2,2,0,0,1,4,16Z" fill="currentColor"></path></svg>
+            </a>
+        </li>
+        <li class="collections-article collections-article-dark">
+            <h3>TOYS, TREATS & LEASHES</h3>
+            <p class="title">Best Picks for Your Pets</p>
+            <p class="text">from <span class="highlight">$1.99</span></p>
+            <a href="/store" class="button green-button button-shadow">
+                Learn more
+                <svg class="button-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36" x="0px" y="0px" style="max-width:100%" height="100%"><defs fill="currentColor"><style fill="currentColor">
+                    .cls-1 {
+                        fill-rule: evenodd;
+                    }
+                </style></defs><path data-name="28" class="cls-1" d="M34,18l-5-4v3H26v2h3v3ZM24,19H20V17h4v2Zm-6,0H14V17h4v2Zm-6,0H8V17h4v2ZM4,16a2,2,0,1,1-2,2A2,2,0,0,1,4,16Z" fill="currentColor"></path></svg>
+            </a>
+        </li>
+    </ul>
+    <section class="container" id="products">
+        <h2 class="section-title">Top Recommendations</h2>
+        <img class="separator" th:src="@{/img/res/separator.svg}" alt="">
+        <p class="subtitle">Shop the best products for your pets with affordable prices only in the Happy Paw online store.</p>
+        <div class="tab-titles">
+            <p class="tab-title active">For Dogs</p>
+            <p class="tab-title">For Cats</p>
+            <p class="tab-title">For Parrots</p>
+            <p class="tab-title">For Rabbits</p>
+            <p class="tab-title">For Hamsters</p>
+            <p class="tab-title">For Fish</p>
+        </div>
+        <ul class="tab-items for-dogs active">
+            <li class="shop-item">
+                <a class="shop-item-img text" th:href="@{/pages/doggy-fun-set.html}"><img th:src="@{/img/shop-items/for-dogs/for-dogs-1.png}" alt=""></a>
+                <h3 class="product-title"><a th:href="@{/pages/doggy-fun-set.html}">DOGGY Fun Set</a></h3>
+                <p class="price">$6,00</p>
+                <button type="button" class="outline-button"><a th:href="@{/pages/doggy-fun-set.html}">Order now</a></button>
+            </li>
+            <li class="shop-item">
+                <a class="shop-item-img text" th:href="@{/pages/duna-pillow-bed.html}"><img th:src="@{/img/shop-items/for-dogs/for-dogs-2.png}" alt=""></a>
+                <h3 class="product-title"><a th:href="@{/pages/duna-pillow-bed.html}">DUNA Pillow Bed</a></h3>
+                <p class="price">$10,00</p>
+                <button type="button" class="outline-button"><a th:href="@{/pages/duna-pillow-bed.html}">Order now</a></button>
+            </li>
+            <li class="shop-item">
+                <a class="shop-item-img text" th:href="@{/pages/aga-retractable-leash.html}"><img th:src="@{/img/shop-items/for-dogs/for-dogs-3.png}" alt=""></a>
+                <h3 class="product-title"><a th:href="@{/pages/aga-retractable-leash.html}">AGA Retractable Leash</a></h3>
+                <p class="price">$33,00</p>
+                <button type="button" class="outline-button"><a th:href="@{/pages/aga-retractable-leash.html}">Order now</a></button>
+            </li>
+            <li class="shop-item">
+                <a class="shop-item-img text" th:href="@{/pages/doggy-2-bunch-toy.html}"><img th:src="@{/img/shop-items/for-dogs/for-dogs-4.png}" alt=""></a>
+                <h3 class="product-title"><a th:href="@{/pages/doggy-2-bunch-toy.html}">DOGGY 2-Bunch Toy</a></h3>
+                <p class="price">$5,00</p>
+                <button type="button" class="outline-button"><a th:href="@{/pages/doggy-2-bunch-toy.html}">Order now</a></button>
+            </li>
+        </ul>
+        <ul class="tab-items for-cats">
+            <li class="shop-item">
+                <a class="shop-item-img text" th:href="@{/pages/aga-mice-set.html}"><img th:src="@{/img/shop-items/for-cats/for-cats-1.png}" alt=""></a>
+                <h3 class="product-title"><a th:href="@{/pages/aga-mice-set.html}">AGA Mice Set</a></h3>
+                <p class="price">$3,00</p>
+                <button type="button" class="outline-button"><a th:href="@{/pages/aga-mice-set.html}">Order now</a></button>
+            </li>
+            <li class="shop-item">
+                <a class="shop-item-img text" th:href="@{/pages/vitalife-2-bowls-set.html}"><img th:src="@{/img/shop-items/for-cats/for-cats-2.png}" alt=""></a>
+                <h3 class="product-title"><a th:href="@{/pages/vitalife-2-bowls-set.html}">VITALIFE 2-Bowls Set</a></h3>
+                <p class="price">$9,00</p>
+                <button type="button" class="outline-button"><a th:href="@{/pages/vitalife-2-bowls-set.html}">Order now</a></button>
+            </li>
+            <li class="shop-item">
+                <a class="shop-item-img text" th:href="@{/pages/aga-leash-and-collar.html}"><img th:src="@{/img/shop-items/for-cats/for-cats-3.png}" alt=""></a>
+                <h3 class="product-title"><a th:href="@{/pages/aga-leash-and-collar.html}">AGA Leash & Collar</a></h3>
+                <p class="price">$13,00</p>
+                <button type="button" class="outline-button"><a th:href="@{/pages/aga-leash-and-collar.html}">Order now</a></button>
+            </li>
+            <li class="shop-item">
+                <a class="shop-item-img text" th:href="@{/pages/duna-gray-bed.html}"><img th:src="@{/img/shop-items/for-cats/for-cats-4.png}" alt=""></a>
+                <h3 class="product-title"><a th:href="@{/pages/duna-gray-bed.html}">DUNA Gray Bed</a></h3>
+                <p class="price">$25,00</p>
+                <button type="button" class="outline-button"><a th:href="@{/pages/duna-gray-bed.html}">Order now</a></button>
+            </li>
+        </ul>
+        <ul class="tab-items for-parrots">
+            <li class="shop-item">
+                <a class="shop-item-img text" th:href="@{/pages/dora-hanging-mirror.html}"><img th:src="@{/img/shop-items/for-parrots/for-parrots-1.png}" alt=""></a>
+                <h3 class="product-title"><a th:href="@{/pages/dora-hanging-mirror.html}">DORA Hanging Mirror</a></h3>
+                <p class="price">$14,00</p>
+                <button type="button" class="outline-button"><a th:href="@{/pages/dora-hanging-mirror.html}">Order now</a></button>
+            </li>
+            <li class="shop-item">
+                <a class="shop-item-img text" th:href="@{/pages/vetra-hanging-nest.htm}"><img th:src="@{/img/shop-items/for-parrots/for-parrots-2.png}" alt=""></a>
+                <h3 class="product-title"><a th:href="@{/pages/vetra-hanging-nest.html}">VETRA Hanging Nest</a></h3>
+                <p class="price">$8,00</p>
+                <button type="button" class="outline-button"><a th:href="@{/pages/vetra-hanging-nest.html}">Order now</a></button>
+            </li>
+            <li class="shop-item">
+                <a class="shop-item-img text" th:href="@{/pages/dora-wood-swing.html}"><img th:src="@{/img/shop-items/for-parrots/for-parrots-3.png}" alt=""></a>
+                <h3 class="product-title"><a th:href="@{/pages/dora-wood-swing.html}">DORA Wood Swing</a></h3>
+                <p class="price">$7,00</p>
+                <button type="button" class="outline-button"><a th:href="@{/pages/dora-wood-swing.html}">Order now</a></button>
+            </li>
+            <li class="shop-item">
+                <a class="shop-item-img text" th:href="@{/pages/opty-wooden-stand.html}"><img th:src="@{/img/shop-items/for-parrots/for-parrots-4.png}" alt=""></a>
+                <h3 class="product-title"><a th:href="@{/pages/opty-wooden-stand.html}">OPTY Wooden Stand</a></h3>
+                <p class="price">$13,00</p>
+                <button type="button" class="outline-button"><a th:href="@{/pages/opty-wooden-stand.html}">Order now</a></button>
+            </li>
+        </ul>
+        <ul class="tab-items for-rabbits">
+            <li class="shop-item">
+                <a class="shop-item-img text" th:href="@{/pages/sera-purple-collar.html}"><img th:src="@{/img/shop-items/for-rabbits/for-rabbits-1.png}" alt=""></a>
+                <h3 class="product-title"><a th:href="@{/pages/sera-purple-collar.html}">SERA Purple Collar</a></h3>
+                <p class="price">$2,00</p>
+                <button type="button" class="outline-button"><a th:href="@{/pages/sera-purple-collar.html}">Order now</a></button>
+            </li>
+            <li class="shop-item">
+                <a class="shop-item-img text" th:href="@{/pages/aga-clinking-toy.html}"><img th:src="@{/img/shop-items/for-rabbits/for-rabbits-2.png}" alt=""></a>
+                <h3 class="product-title"><a th:href="@{/pages/aga-clinking-toy.html}">AGA Clinking Toy</a></h3>
+                <p class="price">$2,00</p>
+                <button type="button" class="outline-button"><a th:href="@{/pages/aga-clinking-toy.html}">Order now</a></button>
+            </li>
+            <li class="shop-item">
+                <a class="shop-item-img text" th:href="@{/pages/harno-rabbit-cage.html}"><img th:src="@{/img/shop-items/for-rabbits/for-rabbits-3.png}" alt=""></a>
+                <h3 class="product-title"><a th:href="@{/pages/harno-rabbit-cage.html}">HARNO Rabbit Cage</a></h3>
+                <p class="price">$60,00</p>
+                <button type="button" class="outline-button"><a th:href="@{/pages/harno-rabbit-cage.html}">Order now</a></button>
+            </li>
+            <li class="shop-item">
+                <a class="shop-item-img text" th:href="@{/pages/dora-rabbit-brush.html}"><img th:src="@{/img/shop-items/for-rabbits/for-rabbits-4.png}" alt=""></a>
+                <h3 class="product-title"><a th:href="@{/pages/dora-rabbit-brush.html}">DORA Rabbit Brush</a></h3>
+                <p class="price">$10,00</p>
+                <button type="button" class="outline-button"><a th:href="@{/pages/dora-rabbit-brush.html}">Order now</a></button>
+            </li>
+        </ul>
+        <ul class="tab-items for-hamsters">
+            <li class="shop-item">
+                <a class="shop-item-img text" th:href="@{/pages/aga-bowl-for-hamsters.html}"><img th:src="@{/img/shop-items/for-hamsters/for-hamsters-1.png}" alt=""></a>
+                <h3 class="product-title"><a th:href="@{/pages/aga-bowl-for-hamsters.html}">AGA Bowl for Hamsters</a></h3>
+                <p class="price">$2,00</p>
+                <button type="button" class="outline-button"><a th:href="@{/pages/aga-bowl-for-hamsters.html}">Order now</a></button>
+            </li>
+            <li class="shop-item">
+                <a class="shop-item-img text" th:href="@{/pages/tisco-toy-wheel.html}"><img th:src="@{/img/shop-items/for-hamsters/for-hamsters-2.png}" alt=""></a>
+                <h3 class="product-title"><a th:href="@{/pages/tisco-toy-wheel.html}">TISCO Toy Wheel</a></h3>
+                <p class="price">$9,00</p>
+                <button type="button" class="outline-button"><a th:href="@{/pages/tisco-toy-wheel.html}">Order now</a></button>
+            </li>
+            <li class="shop-item">
+                <a class="shop-item-img text" th:href="@{/pages/sterco-rainbow-balls.html}"><img th:src="@{/img/shop-items/for-hamsters/for-hamsters-3.png}" alt=""></a>
+                <h3 class="product-title"><a th:href="@{/pages/sterco-rainbow-balls.html}">STERCO Rainbow Balls</a></h3>
+                <p class="price">$3,50</p>
+                <button type="button" class="outline-button"><a th:href="@{/pages/sterco-rainbow-balls.html}">Order now</a></button>
+            </li>
+            <li class="shop-item">
+                <a class="shop-item-img text" th:href="@{/pages/aga-green-cage.html}"><img th:src="@{/img/shop-items/for-hamsters/for-hamsters-4.png}" alt=""></a>
+                <h3 class="product-title"><a th:href="@{/pages/aga-green-cage.html}">AGA Green Cage</a></h3>
+                <p class="price">$25,00</p>
+                <button type="button" class="outline-button"><a th:href="@{/pages/aga-green-cage.html}">Order now</a></button>
+            </li>
+        </ul>
+        <ul class="tab-items for-fish">
+            <li class="shop-item">
+                <a class="shop-item-img text" th:href="@{/pages/ducca-air-pump.html}"><img th:src="@{/img/shop-items/for-fish/for-fish-1.png}" alt=""></a>
+                <h3 class="product-title"><a th:href="@{/pages/ducca-air-pump.html}">DUCCA Air Pump</a></h3>
+                <p class="price">$42,00</p>
+                <button type="button" class="outline-button"><a th:href="@{/pages/ducca-air-pump.html}">Order now</a></button>
+            </li>
+            <li class="shop-item">
+                <a class="shop-item-img text" th:href="@{/pages/tisco-50-liter-aquarium.html}"><img th:src="@{/img/shop-items/for-fish/for-fish-2.png}" alt=""></a>
+                <h3 class="product-title"><a th:href="@{/pages/tisco-50-liter-aquarium.html}">TISCO 50 Liter Aquarium</a></h3>
+                <p class="price">$70,00</p>
+                <button type="button" class="outline-button"><a th:href="@{/pages/tisco-50-liter-aquarium.html}">Order now</a></button>
+            </li>
+            <li class="shop-item">
+                <a class="shop-item-img text" th:href="@{/pages/vetra-fish-castle.html}"><img th:src="@{/img/shop-items/for-fish/for-fish-3.png}" alt=""></a>
+                <h3 class="product-title"><a th:href="@{/pages/vetra-fish-castle.html}">VETRA Fish Castle</a></h3>
+                <p class="price">$6,00</p>
+                <button type="button" class="outline-button"><a th:href="@{/pages/vetra-fish-castle.html}">Order now</a></button>
+            </li>
+            <li class="shop-item">
+                <a class="shop-item-img text" th:href="@{/pages/tisco-landing-net.html}"><img th:src="@{/img/shop-items/for-fish/for-fish-4.png}" alt=""></a>
+                <h3 class="product-title"><a th:href="@{/pages/tisco-landing-net.html}">TISCO Landing Net</a></h3>
+                <p class="price">$4,00</p>
+                <button type="button" class="outline-button"><a th:href="@{/pages/tisco-landing-net.html}">Order now</a></button>
+            </li>
+        </ul>
+    </section>
+    <div class="container brands-container">
+        <div class="brands-wrapper carousel-wrapper">
+            <div class="brands" >
+                <div class="brand-img"><img th:src="@{/img/brands/applaws.png}" alt="Applaws" draggable="false"></div>
+                <div class="brand-img"><img th:src="@{/img/brands/dokas.png}" alt="Dokas" draggable="false"></div>
+                <div class="brand-img"><img th:src="@{/img/brands/tigerino.png}" alt="Tigerino" draggable="false"></div>
+                <div class="brand-img"><img th:src="@{/img/brands/felix.png}" alt="Felix" draggable="false"></div>
+                <div class="brand-img"><img th:src="@{/img/brands/rocco.png}" alt="Rocco" draggable="false"></div>
+                <div class="brand-img"><img th:src="@{/img/brands/gourmet.png}" alt="Gourmet" draggable="false"></div>
+                <div class="brand-img"><img th:src="@{/img/brands/purizon.png}" alt="Purizon" draggable="false"></div>
+            </div>
+            <div class="carousel-btn-wrapper">
+                <button class="prev-btn carousel-btn"></button>
+                <div class="arrow-wrapper">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 30 30">
+                        <path xmlns="http://www.w3.org/2000/svg" d="M19.533 15l-9.1-9.45c-.577-.6-.577-1.5 0-2.1.578-.6 1.445-.6 2.023 0l10.11 10.5c.29.3.434.75.434 1.05 0 .45-.144.75-.433 1.05l-10.111 10.5c-.29.3-.578.45-1.012.45-.433 0-.722-.15-1.01-.45-.578-.6-.578-1.5 0-2.1l9.1-9.45z"></path>
+                    </svg>
+                </div>
+            </div>
+            <div class="carousel-btn-wrapper">
+                <button class="next-btn carousel-btn"></button>
+                <div class="arrow-wrapper">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 30 30">
+                        <path xmlns="http://www.w3.org/2000/svg" d="M19.533 15l-9.1-9.45c-.577-.6-.577-1.5 0-2.1.578-.6 1.445-.6 2.023 0l10.11 10.5c.29.3.434.75.434 1.05 0 .45-.144.75-.433 1.05l-10.111 10.5c-.29.3-.578.45-1.012.45-.433 0-.722-.15-1.01-.45-.578-.6-.578-1.5 0-2.1l9.1-9.45z"></path>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section id="testimonials">
+        <div class="container">
+            <h2 class="section-title">Testimonials by Our Clients</h2>
+            <img class="separator" th:src="@{/img/res/separator.svg}" alt="separator">
+            <p class="subtitle">We're happy with each review you leave! Thank you for your trust.</p>
+            <div class="reviews-wrapper carousel-wrapper">
+                <ul class="reviews">
+                    <li class="review-wrapper">
+                        <div class="card">
+                            <img class="profile-picture" th:src="@{/img/customers-img/douglas-wright.png}" alt="Douglas's profile picture">
+                            <p class="name">Douglas Wright</p>
+                            <p class="with-pet">and his gorgeous cat named Billy</p>
+                            <p class="message">
+                                “I often order food for my cat from this store as they offer free shipping. The prices here are quite low, and you can order a lot of great goods by top manufacturers.”
+                            </p>
+                            <p class="time">
+                                <time datetime="2018-10-28">December 15, 2020</time>
+                            </p>
+                        </div>
+                    </li>
+                    <li class="review-wrapper">
+                        <div class="card">
+                            <img class="profile-picture" th:src="@{/img/customers-img/diana-peterson.png}" alt="Diana's profile picture">
+                            <p class="name">Diana Peterson</p>
+                            <p class="with-pet">with Cooper, her lovely dog</p>
+                            <p class="message">
+                                “My Cooper is already 10 years old and for the last 3 years, I have been ordering food, new leashes, and vitamins only at Happy Paw. They sell really high-quality goods!"
+                            </p>
+                            <p class="time">
+                                <time datetime="2019-06-13">February 02, 2021</time>
+                            </p>
+                        </div>
+                    </li>
+                    <li class="review-wrapper">
+                        <div class="card">
+                            <img class="profile-picture" th:src="@{/img/customers-img/john-mary-roberts.png}" alt="John and Mary's profile picture">
+                            <p class="name">John and Mary Roberts</p>
+                            <p class="with-pet">and their cool rabbit named Snowball</p>
+                            <p class="message">
+                                “When we bought Snowball, Mary was very happy, but there were also many questions — we needed a cage, cleaning products,  hay, etc. But we easily found all this in Happy Paw! ”
+                            </p>
+                            <p class="time">
+                                <time datetime="2019-10-04">March 28, 2021</time>
+                            </p>
+                        </div>
+                    </li>
+                    <li class="review-wrapper">
+                        <div class="card">
+                            <img class="profile-picture" th:src="@{/img/customers-img/dean-williamson.png}" alt="Dean's profile picture">
+                            <p class="name">Dean Williamson</p>
+                            <p class="with-pet">with Booper, the star of his Instagram</p>
+                            <p class="message">
+                                “Booper gets all the best from me and the Happy Paw store! I often treat him with some new toys, decorations for his cage, etc. I absolutely trust Happy Paw.”
+                            </p>
+                            <p class="time">
+                                <time datetime="2020-01-18">May 05, 2021</time>
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+                <div class="carousel-btn-wrapper">
+                    <button class="prev-btn carousel-btn"></button>
+                    <div class="arrow-wrapper">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 30 30">
+                            <path xmlns="http://www.w3.org/2000/svg" d="M19.533 15l-9.1-9.45c-.577-.6-.577-1.5 0-2.1.578-.6 1.445-.6 2.023 0l10.11 10.5c.29.3.434.75.434 1.05 0 .45-.144.75-.433 1.05l-10.111 10.5c-.29.3-.578.45-1.012.45-.433 0-.722-.15-1.01-.45-.578-.6-.578-1.5 0-2.1l9.1-9.45z"></path>
+                        </svg>
+                    </div>
+                </div>
+                <div class="carousel-btn-wrapper">
+                    <button class="next-btn carousel-btn"></button>
+                    <div class="arrow-wrapper">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 30 30">
+                            <path xmlns="http://www.w3.org/2000/svg" d="M19.533 15l-9.1-9.45c-.577-.6-.577-1.5 0-2.1.578-.6 1.445-.6 2.023 0l10.11 10.5c.29.3.434.75.434 1.05 0 .45-.144.75-.433 1.05l-10.111 10.5c-.29.3-.578.45-1.012.45-.433 0-.722-.15-1.01-.45-.578-.6-.578-1.5 0-2.1l9.1-9.45z"></path>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <ul class="slider-dots">
+                <li><button class="slider-dot active-slider-dot"></button></li>
+                <li><button class="slider-dot"></button></li>
+                <li><button class="slider-dot"></button></li>
+                <li><button class="slider-dot"></button></li>
+            </ul>
+        </div>
+    </section>
+    <section class="container details" id="details">
+        <div class="about-us">
+            <h2 class="div-tag">About us</h2>
+            <p class="large-title">We sell tasty sweets, cool toys and  across the USA</p>
+            <div class="detail">
+                <h3>How to make an order?</h3>
+                <p class="text">
+                    Specify the name of the preferred product in our contact form and provide all the
+                    needed details. Our manager will contact you soon after checking the stock status.
+                </p>
+            </div>
+            <div class="detail">
+                <h3>Dispatch v Delivery</h3>
+                <p class="text">
+                    On the product page, you can see a dispatch estimate e.g. 'within 2-3 weeks'. Dispatch
+                    is when we send the item to our delivery partner, not the date it is delivered to your
+                    door. If you need more accurate delivery times, check it with the manager.
+                </p>
+            </div>
+            <div class="detail">
+                <h3>Returns &amp; Refunds</h3>
+                <p class="text">
+                    If you won't like the product, you can return it to us within 14 days for a full
+                    refund. Simply contact us and we will assist you with your return. Remember that
+                    you'll need to disassemble the item and repackage it, in order for us to collect the
+                    product and return it to the warehouse.
+                </p>
+            </div>
+        </div>
+        <div class="video">
+            <video>
+                <source th:src="@{/img/pet-video.mp4}" type="video/mp4">
+            </video>
+            <div id="video-controls" class="controls" data-state="visible">
+                <button id="playpause" type="button" data-state="play">Play/Pause</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="best-selling" class="container">
+        <h2 class="section-title">Our News & Articles</h2>
+        <img class="separator" th:src="@{/img/res/separator.svg}" alt="">
+        <p class="subtitle">Everything you need to know about caring for your pet.</p>
+        <div class="cards-wrapper">
+            <div class="card">
+                <div class="card-img">
+                    <img th:src="@{/img/res/blog1.png}" alt="">
+                </div>
+                <div class="card-content">
+                    <h3 class="product-title">How to Select an Aquarium?</h3>
+                    <p class="description">
+                        If you're thinking about setting up an aquarium, or you've already made
+                        the decision to start shopping, one of the first things you're probably
+                        considering is what size fish tank to get. If this is your first experience
+                        with an aquarium, you might be thinking that it's best to start out with a
+                        smaller size. You might think that it will keep the cost down and that smaller
+                        aquariums are less intimidating. Not to mention, they don't take up as much space.
+                        When deciding on your next aquarium purchase, think about the types of fish you
+                        want to keep and the amount of space you have, then buy the largest aquarium
+                        that meets your needs.
+                    </p>
+                </div>
+                <a class="more"></a>
+            </div>
+            <div class="card">
+                <div class="card-img">
+                    <img th:src="@{/img/res/blog2.png}" alt="">
+                </div>
+                <div class="card-content">
+                    <h3 class="product-title">Picking the Right Feeder</h3>
+                    <p class="description">
+                        Each dog is different and has its own individual needs. Our duty as his
+                        owners is trying to satisfy them. Nowadays, there are many dog breeds
+                        that are very different. The most important features that we should pay
+                        attention to when choosing the right dog bowl is the size of the dog, the
+                        shape of his mouth, the length of his ears, as well as his temperament.
+                        In every dog accessories store we can find a wide range of dog bowls.
+                        Everyone can find something suitable for their pet. There are a few basic
+                        aspects that we should consider when looking for the right dog bowl for our four-legged friend.
+                        The material is very important.
+                    </p>
+                </div>
+                <a class="more"></a>
+            </div>
+            <div class="card">
+                <div class="card-img">
+                    <img th:src="@{/img/res/blog3.png}" alt="">
+                </div>
+                <div class="card-content">
+                    <h3 class="product-title">Are You Ready to Adopt a Rabbit?</h3>
+                    <p class="description">
+                        Most rabbits at rescue organizations are 4 months to 2 years old; these older bunnies are healthier
+                        because at this age they have a better immune system. Baby bunnies are very cute, but young adult
+                        bunnies are still extremely adorable, they will easily bond with you, and will run and play for
+                        many more years to come. Rabbits are social creatures with gentle natures and individual personalities,
+                        and they need just as much attention as a dog or cat. They are not suitable companions for young children.
+                        Rabbits require specific foods, stimulating environments, and veterinarians who have specialized knowledge of their species.
+                    </p>
+                </div>
+                <a class="more"></a>
+            </div>
+        </div>
+    </section>
+    <section id="contacts" class="container">
+        <div class="contacts-wrapper">
+            <h2 class="section-title">Contacts</h2>
+            <img class="contacts-wrapper-separator" th:src="@{/img/res/separator.svg}" alt="">
+            <p class="subtitle">
+                We are always happy to chat with you. Contact us in any convenient way and we will
+                answer all your questions.
+            </p>
+            <div class="info">
+                <div class="info-item">
+                    <p class="title">Address</p>
+                    <p class="text">
+                        93-40 Queens Blvd, Flushing,<br>
+                        NY 11374, USA
+                    </p>
+                </div>
+                <div class="info-item">
+                    <p class="title">Hours</p>
+                    <p class="text">
+                        Monday - Sunday: 8 AM - 8 PM
+                    </p>
+                </div>
+                <div class="info-item">
+                    <p class="title">Contacts</p>
+                    <p class="text">
+                        <a href="tel:+123456789">+123 456 789</a><br>
+                        <a href="mailto:happypaw@email.com">happypaw@gmail.com</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <iframe tabindex="-1" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.4147359377043!2d-73.86789958459445!3d40.730898779329806!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25e482aec40b1%3A0xf0e427633bfec4a0!2zOTMtNDAgUXVlZW5zIEJsdmQsIFF1ZWVucywgTlkgMTEzNzQsINCh0L_QvtC70YPRh9C10L3RliDQqNGC0LDRgtC4INCQ0LzQtdGA0LjQutC4!5e0!3m2!1suk!2sua!4v1625829130876!5m2!1suk!2sua" width="570" height="450" style="border: 0" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+</main>
+<footer>
+    <div class="container">
+        <div class="footer-main">
+            <div class="footer-info">
+                <a href="#" class="logo"><img th:src="@{/img/logo.png}" alt="Happy Paw"></a>
+                <p class="text">
+                    If you have any questions, please contact us at happypaw@gmail.com or get in touch via social media.</p>
+                <ul class="wrapper">
+                    <li class="icon facebook">
+                        <span class="tooltip">Facebook</span>
+                        <span><i class="fab fa-facebook-f"><a href="https://www.facebook.com/Happypawlb"><img th:src="@{/img/social-icons/facebook-svgrepo-com.svg}" alt=""></a></i></span>
+                    </li>
+                    <li class="icon twitter">
+                        <span class="tooltip">Twitter</span>
+                        <span><i class="fab fa-twitter"><a href="https://twitter.com/happypaw_us"><img th:src="@{/img/social-icons/twitter-svgrepo-com.svg}" alt=""></a></i></span>
+                    </li>
+                    <li class="icon instagram">
+                        <span class="tooltip">Instagram</span>
+                        <span><i class="fab fa-instagram"><a href="https://www.instagram.com/happy_paw/"><img th:src="@{/img/social-icons/instagram-social-svgrepo-com.svg}" alt=""></a></i></span>
+                    </li>
+                    <li class="icon youtube">
+                        <span class="tooltip">Youtube</span>
+                        <span><i class="fab fa-youtube"><a href="https://www.youtube.com/channel/UCV8N7NiJqZJsssMT3wAjjzQ"><img th:src="@{/img/social-icons/youtube-svgrepo-com.svg}" alt=""></a></i></span>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-nav">
+                <div class="navigation">
+                    <h3>Navigation</h3>
+                    <div class="orange-separator"></div>
+                    <ul>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#categories">Categories</a></li>
+                        <li><a href="#best-sellers">Best Sellers</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                        <li><a href="#products">Our Shop</a></li>
+                    </ul>
+                </div>
+                <div class="customer-service">
+                    <h3>Customer Service</h3>
+                    <div class="orange-separator"></div>
+                    <ul>
+                        <li>Track Order</li>
+                        <li>Returns</li>
+                        <li>Shipping Info</li>
+                        <li>Recalls & Advisories</li>
+                        <li>Pet Store Locator</li>
+                    </ul>
+                </div>
+                <div class="help-and-info">
+                    <h3>Help & Information</h3>
+                    <div class="orange-separator"></div>
+                    <ul>
+                        <li>Privacy Policy</li>
+                        <li>Terms & Conditions</li>
+                        <li>FAQ</li>
+                        <li>Product Support</li>
+                        <li>Contact Us</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>© Created by</p>
+        <p>All rights Reserved</p>
+    </div>
+</footer>
+<script th:src="@{/js/index.js}"></script>
+</body>
+</html>
